@@ -1,16 +1,13 @@
 # This is a sample Python script.
+from calculator import ScientificCalculator
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+calc = ScientificCalculator()
+print(calc.integrate("x**2 * 2 + x", 1, 1000000))
+print(calc.add(12, 5))
+print(calc.divide(4, 2))
+print(calc.multiply(12, 2))
+print(calc.factorial(5))
+print(calc.solve_equation("x+2**8 = 4"))
+print(calc.square_root(16))
+print(calc.subtract(12, 5))
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
